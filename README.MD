@@ -21,7 +21,7 @@
     ![Print 1](/Prints/1.png)
 
     ![Print 2](/Prints/2.png)
---
+---
 
 Foi necessário criar um servidor para receber a mensagem via webhook, foram dadas as opções de utilizar Discord, Telegram ou Slack. No caso desse projeto foi utilizado o Discord.
 
@@ -79,7 +79,7 @@ while true; do
 
     sleep 60
 
-````
+```
 ### Explicação do Código:
 
 >`#!/bin/bash` - Indica que o script será executado usando o interpretador de comandos do Bash. É obrigatório em scripts Bash. Chama-se "shebang".
