@@ -16,11 +16,13 @@
 
 ---
 ## Etapa 1 - Configuração do ambiente:
+
     Nesse projeto decide utilizar uma máquina virtual da Oracle VirtualBox, utilizando o sistema Ubuntu como sugerido, na versão 25.04. Habilitando o modo bridge e configurando nos seus requisitos mínimos.
 
-    ![Print 1](/Prints/1.png)
+![Print 1](/Prints/1.png)
 
-    ![Print 2](/Prints/2.png)
+![Print 2](/Prints/2.png)
+
 ---
 
 Foi necessário criar um servidor para receber a mensagem via webhook, foram dadas as opções de utilizar Discord, Telegram ou Slack. No caso desse projeto foi utilizado o Discord.
@@ -35,16 +37,16 @@ Foi necessário criar um servidor para receber a mensagem via webhook, foram dad
 
 ## Etapa 2 - Como instalar e configurar o servidor web:
     Após configurar o ambiente, faremos a instalação de algumas aplicações:
-    >`apt-get install nginx` - Servidor Web
+>`apt-get install nginx` - Servidor Web
 
-    >`apt-get install curl` - Para verificar a conectividade da URL
+>`apt-get install curl` - Para verificar a conectividade da URL
 
     Logo após fui até até a pasta www através do comando:
-    >`cd /var/www`
+>`cd /var/www`
 
     E criei uma pasta nova dedicada ao projeto e inseri o HTML na pasta. Sendo o nome da pasta devseclaranja.local. Após isso comecei a personalizar o HTML com css, até um nível que considerei satisfatório.
 
-    ![Print 6](/Prints/6.png)
+![Print 6](/Prints/6.png)
 
     Adicionei a ele algumas informações do projeto e o finalizei.
 
@@ -52,7 +54,7 @@ Foi necessário criar um servidor para receber a mensagem via webhook, foram dad
 
 ## Etapa 3 - Como funciona o script de monitoramento:
     Em seguida fui para a parte de criação do script, no meu caso criei uma pasta chamada scripts na pasta nginx localizada em:
-    >`cd /etc/nginx`
+>`cd /etc/nginx`
 
     E nela criei um script chamado verifica_siteprojeto.sh, foram dadas outras opções como utilizar python para o script, mas optei por usar bash, assim criei o código.
     ```
