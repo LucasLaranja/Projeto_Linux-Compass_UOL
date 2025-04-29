@@ -113,7 +113,7 @@ Se o site estiver ok, STATUS será 200.
 "$WEBHOOK"` - Aqui, usamos novamente o curl, mas dessa vez para enviar uma mensagem para o Discord: -H: define o tipo de conteúdo (JSON). -X POST: envia os dados como um POST (envio de formulário). -d: os dados a serem enviados. No caso, um texto formatado com a variável de status e a hora. "$DISCORD_WEBHOOK": é o destino da mensagem.
 
 >`else
-echo "$DATA_HORA - [$SITE_URL] Está online! - Status: $STATUS" >> "$LOG_FILE"` - Se o status for 200, o site está online, e isso é salvo no arquivo de log também.
+echo "$DATA_HORA - [$SITE_URL] Está online! - Status: $STATUS" >> "$LOG"` - Se o status for 200, o site está online, e isso é salvo no arquivo de log também.
 
 >`fi` - Fecha o bloco do if.
 
