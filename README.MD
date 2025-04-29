@@ -25,7 +25,7 @@
 
 ---
 
-Foi necessário criar um servidor para receber a mensagem via webhook, foram dadas as opções de utilizar Discord, Telegram ou Slack. No caso desse projeto foi utilizado o Discord.
+    Foi necessário criar um servidor para receber a mensagem via webhook, foram dadas as opções de utilizar Discord, Telegram ou Slack. No caso desse projeto foi utilizado o Discord.
 
 ![Print 3](/Prints/3.png)
 
@@ -57,7 +57,7 @@ Foi necessário criar um servidor para receber a mensagem via webhook, foram dad
 >`cd /etc/nginx`
 
     E nela criei um script chamado verifica_siteprojeto.sh, foram dadas outras opções como utilizar python para o script, mas optei por usar bash, assim criei o código.
-    ```
+```
 #!/bin/bash
 
 SITE_URL="http://devseclaranja.local"
@@ -125,22 +125,22 @@ echo "$DATA_HORA - [$SITE_URL] Está online! - Status: $STATUS" >> "$LOG_FILE"` 
 
 ## Etapa 4 - Teste e validação da solução:
     Após modificar o index.html e criar o script, chegou a hora de testar. abro a máquina virtual, abro o terminal, entro no modo root através do:
-    >`sudo su`
+>`sudo su`
 
     E para testar o webhoook, iremos parar o nginx:
-    >`systemctl stop nginx`
+>`systemctl stop nginx`
 
     Agora vamos testar com o comando:
-    >`bash verifica_siteprojeto.sh`
+>`bash verifica_siteprojeto.sh`
 
     E as mensagens começaram a chegar.
-    ![print 7](/Prints/7.png)
+![print 7](/Prints/7.png)
 
     Caso queira voltar e só utilizar o comando:
-    >`systemctl restart nginx`
+>`systemctl restart nginx`
 
     Após ver que as mensagens estão chegando, vamos conferir o log:
-    ![print 8](/Prints/8.png)
+![print 8](/Prints/8.png)
 
     Assim temos as informações, data e horário.
 
